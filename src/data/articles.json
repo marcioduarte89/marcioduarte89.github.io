@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "reflections-on-navora-architecture",
+    "title": "The Architect’s Workshop: Navora — Reflections on Architecture, Trade-offs, and What I’d Do Differently",
+    "description": "As I wrap up this blog series on Navora, I want to take a step back and reflect on the journey — what I set out to do, the architectural decisions I made, the trade-offs I accepted, and what I’d approach differently if I were to do it all over again.",
+    "author": "Marcio Duarte",
+    "date": "2025-07-28",
+    "readTime": "6 min read",
+    "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
+    "contentFile": "reflections-on-navora-architecture.md"
+  },
+  {
+    "slug": "admin-service-for-telemetry",
+    "title": "The Architect’s Workshop: Navora — Control Center - Designing the Admin Service for Telemetry Management",
+    "description": "In Navora’s architecture, the Admin Service acts as the control center — a secure interface where administrators can monitor vehicle activity, review historical telemetry, and respond to alerts as they happen.",
+    "author": "Marcio Duarte",
+    "date": "2025-07-17",
+    "readTime": "4 min read",
+    "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
+    "contentFile": "admin-service-for-telemetry.md"
+  },
+  {
+    "slug": "architecting-the-alerts-processing-service",
+    "title": "The Architect’s Workshop: Navora — Detect and Respond — Architecting the Alerts Processing Service",
+    "description": "In any telemetry-driven system, detecting anomalies is only half the work — responding to them quickly and reliably is just as critical. In Navora, the alerting pipeline is designed to be scalable, loosely coupled, and extensible, using Amazon SNS, Lambda, and a purpose-built DynamoDB Alerts table.",
+    "author": "Marcio Duarte",
+    "date": "2025-07-08",
+    "readTime": "4 min read",
+    "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
+    "contentFile": "architecting-the-alerts-processing-service.md"
+  },
+  {
+    "slug": "designing-the-iot-pipeline",
+    "title": "The Architect’s Workshop: Navora — Streaming the Signal: Designing the IoT Telemetry Ingestion Pipeline",
+    "description": "Breakdown of how we’ve designed and implemented the IoT Telemetry ingestion pipeline.",
+    "author": "Marcio Duarte",
+    "date": "2025-06-30",
+    "readTime": "7 min read",
+    "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
+    "contentFile": "designing-the-iot-pipeline.md"
+  },
+  {
+    "slug": "functional-and-non-functional-requirements",
+    "title": "The Architect’s Workshop: Navora—Laying the Foundation",
+    "description": "Defining the functional and non-functional requirements for our fictional company - Navora.",
+    "author": "Marcio Duarte",
+    "date": "2025-06-23",
+    "readTime": "6 min read",
+    "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
+    "contentFile": "functional-and-non-functional-requirements.md"
+  },
+  {
+    "slug": "welcome-to-navora",
+    "title": "Welcome to The Architect’s Workshop",
+    "description": "In the ever-evolving world of software and cloud architecture, theory is abundant and it’s easy to get caught up in it— but practical, real-world application is where true mastery is forged. The Architect’s Workshop is a space dedicated to that craft.",
+    "author": "Marcio Duarte",
+    "date": "2025-06-05",
+    "readTime": "3 min read",
+    "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
+    "contentFile": "welcome-to-navora.md"
+  },
+  {
+    "slug": "kafka-dotnet-demo",
+    "title": "Kafka .NET Demo",
+    "description": "This will be the fifth and last article in our Kafka Learning Series, and the culmination of our theoretical learning with a real demo!",
+    "author": "Marcio Duarte",
+    "date": "2021-11-14",
+    "readTime": "5 min read",
+    "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
+    "contentFile": "kafka-dotnet-demo.md"
+  },
+  {
+    "slug": "inside-kafka-cli",
+    "title": "Inside Kafka’s CLI",
+    "description": "In this article we’ll spin up Kafka (and Zookeeper) using Docker (usage of Docker is not in the scope of this post) and we’ll use some of the most common and important Kafka’s CLI commands.",
+    "author": "Marcio Duarte",
+    "date": "2021-11-14",
+    "readTime": "5 min read",
+    "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
+    "contentFile": "inside-kafka-cli.md"
+  },
+  {
+    "slug": "kafka-consumers",
+    "title": "Kafka Consumers",
+    "description": "In this article we’ll explore how Kafka consumers work.",
+    "author": "Marcio Duarte",
+    "date": "2021-11-14",
+    "readTime": "4 min read",
+    "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
+    "contentFile": "kafka-consumers.md"
+  },
+  {
+    "slug": "kafka-producers",
+    "title": "Kafka Producers",
+    "description": "In this article we’ll explore how Kafka producers work.",
+    "author": "Marcio Duarte",
+    "date": "2021-11-14",
+    "readTime": "4 min read",
+    "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
+    "contentFile": "kafka-producers.md"
+  },
+  {
+    "slug": "intro-to-kafka",
+    "title": "Intro to Kafka",
+    "description": "This is the first article of a series of 5 where we will learn and discuss about some of Kafka features, its usage and in the end we’ll implement a small .NET demo application.",
+    "author": "Marcio Duarte",
+    "date": "2021-11-14",
+    "readTime": "4 min read",
+    "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
+    "contentFile": "intro-to-kafka.md"
+  },
+  {
+    "slug": "sqs-dispatcher",
+    "title": "How to Configure and Use SQS Message Dispatcher",
+    "description": "Library to dispatch SQS Messages",
+    "author": "Marcio Duarte",
+    "date": "2021-10-25",
+    "readTime": "3 min read",
+    "tags": ["Dotnet Core", "AWS", "AWS SQS", "Cloud Computing", "Cloud"],
+    "contentFile": "sqs-dispatcher.md"
+  }
+]

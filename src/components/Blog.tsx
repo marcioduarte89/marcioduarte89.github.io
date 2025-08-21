@@ -5,10 +5,21 @@ import { Link } from "react-router-dom";
 import blogHeader from "@/assets/Architect workshop header croped.jpg";
 import blogKafkaHeader from "@/assets/kafka-header.jpg";
 import blogSqsHeader from "@/assets/sqs-header.jpg";
+import mindLogHeader from "@/assets/mindlog header.jpg";
+
 
 import { useState } from "react";
 
 const blogPosts = [
+  {
+    title: "Mindlog: Laying the Foundations — Introduction & Architecture",
+    description: "Every system starts with a problem to solve. For Mindlog, that problem is clear: while tools like Obsidian are excellent for capturing and organizing notes, they don’t easily support AI-driven search, aggregation, or deeper insights. This opening article introduces The Architect’s Workshop approach — learning architecture by building — and sets out the vision for Mindlog, an AI-augmented knowledge base. It covers the challenges of moving beyond static note-taking, the guiding principles behind the solution, and the high-level architecture that ties Obsidian, embeddings, vector databases, MCP, and Claude into a cohesive system.",
+    image: mindLogHeader,
+    readTime: "4 min read",
+    date: "2025-08-21",
+    tags: ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's"],
+    slug: "mindlog-architecting-ai-powered-knowledge-base"
+  },
   {
     title: "The Architect’s Workshop: Navora — Reflections on Architecture, Trade-offs, and What I’d Do Differently",
     description: "As I wrap up this blog series on Navora, I want to take a step back and reflect on the journey — what I set out to do, the architectural decisions I made, the trade-offs I accepted, and what I’d approach differently if I were to do it all over again",

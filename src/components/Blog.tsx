@@ -12,6 +12,15 @@ import { useState } from "react";
 
 const blogPosts = [
   {
+    title: "MindLog: Vectors in the Vault - From Markdown to Meaning",
+    description: "The journey from raw Markdown notes to being able to chat with my notes begins with a parser. In the MindLog pipeline, the parser is the gatekeeper: it ensures that notes from the knowledge base are consistently extracted, segmented, and enriched before they ever reach the embedding stage.",
+    image: mindLogHeader,
+    readTime: "8 min read",
+    date: "2025-09-02",
+    tags: ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's", "Weaviate"],
+    slug: "mindlog-vectors-in-the-vault"
+  },
+  {
     title: "Mindlog: Laying the Foundations — Introduction & Architecture",
     description: "Every system starts with a problem to solve. For Mindlog, that problem is clear: while tools like Obsidian are excellent for capturing and organizing notes, they don’t easily support AI-driven search, aggregation, or deeper insights. This opening article introduces The Architect’s Workshop approach — learning architecture by building — and sets out the vision for Mindlog, an AI-augmented knowledge base. It covers the challenges of moving beyond static note-taking, the guiding principles behind the solution, and the high-level architecture that ties Obsidian, embeddings, vector databases, MCP, and Claude into a cohesive system.",
     image: mindLogHeader,

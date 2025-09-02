@@ -26,7 +26,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-          Software engineer with a passion for leading teams, architecting scalable systems, and delivering software that makes a real-world impact.
+          Software engineer with a passion for leading teams, architecting and developing robust, maintainable and scalable software.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 animate-fade-in">
@@ -50,15 +50,21 @@ const Hero = () => {
         
         {/* Social Links */}
         <div className="flex justify-center gap-6 mb-12">
-          <Button variant="ghost" size="icon" className="hover:text-primary glow-effect">
-            <Github className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-primary glow-effect">
-            <Linkedin className="h-6 w-6" />
-          </Button>
-          <Button variant="ghost" size="icon" className="hover:text-primary glow-effect">
-            <Mail className="h-6 w-6" />
-          </Button>
+          <a href="https://github.com/marcioduarte89" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon" className="hover:text-primary glow-effect">
+              <Github className="h-6 w-6" />
+            </Button>
+          </a>
+          <a href="https://www.linkedin.com/in/marcio-j-duarte/" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon" className="hover:text-primary glow-effect">
+              <Linkedin className="h-6 w-6" />
+            </Button>
+          </a>
+          <a href="mailto:marcio.duarte89@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Button variant="ghost" size="icon" className="hover:text-primary glow-effect">
+              <Mail className="h-6 w-6" />
+            </Button>
+          </a>
         </div>
         
         {/* Scroll Indicator */}

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import mdLogo from "@/assets/md-logo.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -18,11 +18,13 @@ const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
-      
-      // Update active section based on scroll position
+
       const sections = navItems.map(item => item.href.slice(1));
       const currentSection = sections.find(section => {
         const element = document.getElementById(section);
@@ -32,7 +34,7 @@ const Navigation = () => {
         }
         return false;
       });
-      
+
       if (currentSection) {
         setActiveSection(currentSection);
       }
@@ -43,23 +45,39 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (href: string) => {
-    const element = document.getElementById(href.slice(1));
-    element?.scrollIntoView({ behavior: 'smooth' });
+    const sectionId = href.slice(1);
+
+    if (location.pathname !== "/") {
+      // Navigate back to home and pass the scroll target
+      navigate("/", { state: { scrollTo: sectionId } });
+    } else {
+      // Already on home, just scroll
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: "smooth" });
+    }
+
     setIsOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-      scrolled ? "bg-background/95 backdrop-blur-md shadow-[var(--shadow-card)]" : "bg-transparent"
-    }`}>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
+        scrolled
+          ? "bg-background/95 backdrop-blur-md shadow-[var(--shadow-card)]"
+          : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button 
+            <button
               onClick={() => scrollToSection("#home")}
-              className="flex items-center gap-2 hover:scale-105 transition-spring">
-              <span className="text-xl font-bold text-gradient">Marcio Duarte</span>
+              className="flex items-center gap-2 hover:scale-105 transition-spring"
+            >
+              <span className="text-xl font-bold text-gradient">
+                Marcio Duarte
+              </span>
             </button>
           </div>
 
@@ -71,8 +89,8 @@ const Navigation = () => {
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
                   className={`text-sm font-medium transition-smooth relative ${
-                    activeSection === item.href.slice(1) 
-                      ? "text-primary" 
+                    activeSection === item.href.slice(1)
+                      ? "text-primary"
                       : "text-muted-foreground hover:text-primary"
                   }`}
                 >
@@ -107,8 +125,8 @@ const Navigation = () => {
                   key={item.label}
                   onClick={() => scrollToSection(item.href)}
                   className={`block w-full text-left text-sm font-medium transition-smooth ${
-                    activeSection === item.href.slice(1) 
-                      ? "text-primary" 
+                    activeSection === item.href.slice(1)
+                      ? "text-primary"
                       : "text-muted-foreground hover:text-primary"
                   }`}
                 >

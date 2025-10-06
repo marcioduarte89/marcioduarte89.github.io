@@ -45,7 +45,7 @@ const Article = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-6 py-12">
+      <div className="container mx-auto px-6 pt-28 pb-12">
         <h1 className="text-4xl font-bold mb-4">{article.title}</h1>
         <p className="text-muted-foreground mb-6">{article.description}</p>
         <div className="flex gap-4 text-sm text-muted-foreground">

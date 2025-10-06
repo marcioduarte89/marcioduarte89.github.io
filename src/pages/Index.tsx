@@ -6,8 +6,23 @@ import Experience from "@/components/Experience";
 import Work from "@/components/Work";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Index = () => {
+	
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const sectionId = location.state.scrollTo;
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+	
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

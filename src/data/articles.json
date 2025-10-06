@@ -1,5 +1,16 @@
 [
   {
+    "slug": "mindlog-searching-smarter",
+    "title": "MindLog: Searching Smarter: Building an AI-Ready Knowledge Base",
+    "description": "In the last article, we parsed markdown notes, created embeddings, and stored them in Weaviate. That gave us a powerful way to run semantic queries across our knowledge base. But embeddings on their own aren't the end goal. I want to use them",
+    "author": "Marcio Duarte",
+    "date": "2025-10-06",
+    "readTime": "10 min read",
+    "tags": ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's", "Weaviate"],
+    "contentFile": "mindlog-searching-smarter.md",
+	"image": "mindlog header.jpg"
+  },
+  {
     "slug": "mindlog-vectors-in-the-vault",
     "title": "MindLog: Vectors in the Vault - From Markdown to Meaning",
     "description": "The journey from raw Markdown notes to being able to chat with my notes begins with a parser. In the MindLog pipeline, the parser is the gatekeeper: it ensures that notes from the knowledge base are consistently extracted, segmented, and enriched before they ever reach the embedding stage.",
@@ -7,7 +18,8 @@
     "date": "2025-09-02",
     "readTime": "8 min read",
     "tags": ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's", "Weaviate"],
-    "contentFile": "mindlog-vectors-in-the-vault.md"
+    "contentFile": "mindlog-vectors-in-the-vault.md",
+	"image": "mindlog header.jpg"
   },
   {
     "slug": "mindlog-architecting-ai-powered-knowledge-base",
@@ -17,7 +29,8 @@
     "date": "2025-08-21",
     "readTime": "4 min read",
     "tags": ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's"],
-    "contentFile": "mindlog-architecting-ai-powered-knowledge-base.md"
+    "contentFile": "mindlog-architecting-ai-powered-knowledge-base.md",
+	"image": "mindlog header.jpg"
   },
   {
     "slug": "reflections-on-navora-architecture",
@@ -27,7 +40,8 @@
     "date": "2025-07-28",
     "readTime": "6 min read",
     "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
-    "contentFile": "reflections-on-navora-architecture.md"
+    "contentFile": "reflections-on-navora-architecture.md",
+	"image": "Architect workshop header croped.jpg"
   },
   {
     "slug": "admin-service-for-telemetry",
@@ -37,7 +51,8 @@
     "date": "2025-07-17",
     "readTime": "4 min read",
     "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
-    "contentFile": "admin-service-for-telemetry.md"
+    "contentFile": "admin-service-for-telemetry.md",
+	"image": "Architect workshop header croped.jpg"
   },
   {
     "slug": "architecting-the-alerts-processing-service",
@@ -47,7 +62,8 @@
     "date": "2025-07-08",
     "readTime": "4 min read",
     "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
-    "contentFile": "architecting-the-alerts-processing-service.md"
+    "contentFile": "architecting-the-alerts-processing-service.md",
+	"image": "Architect workshop header croped.jpg"
   },
   {
     "slug": "designing-the-iot-pipeline",
@@ -57,7 +73,8 @@
     "date": "2025-06-30",
     "readTime": "7 min read",
     "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
-    "contentFile": "designing-the-iot-pipeline.md"
+    "contentFile": "designing-the-iot-pipeline.md",
+	"image": "Architect workshop header croped.jpg"
   },
   {
     "slug": "functional-and-non-functional-requirements",
@@ -67,7 +84,8 @@
     "date": "2025-06-23",
     "readTime": "6 min read",
     "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
-    "contentFile": "functional-and-non-functional-requirements.md"
+    "contentFile": "functional-and-non-functional-requirements.md",
+	"image": "Architect workshop header croped.jpg"
   },
   {
     "slug": "welcome-to-navora",
@@ -77,7 +95,8 @@
     "date": "2025-06-05",
     "readTime": "3 min read",
     "tags": ["Software Architecture", "Dotnet", "Serverless Architecture", "AWS", "CSharp Programming"],
-    "contentFile": "welcome-to-navora.md"
+    "contentFile": "welcome-to-navora.md",
+	"image": "Architect workshop header croped.jpg"
   },
   {
     "slug": "kafka-dotnet-demo",
@@ -87,7 +106,8 @@
     "date": "2021-11-14",
     "readTime": "5 min read",
     "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
-    "contentFile": "kafka-dotnet-demo.md"
+    "contentFile": "kafka-dotnet-demo.md",
+	"image": "kafka-header.jpg"
   },
   {
     "slug": "inside-kafka-cli",
@@ -97,7 +117,8 @@
     "date": "2021-11-14",
     "readTime": "5 min read",
     "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
-    "contentFile": "inside-kafka-cli.md"
+    "contentFile": "inside-kafka-cli.md",
+	"image": "kafka-header.jpg"
   },
   {
     "slug": "kafka-consumers",
@@ -107,7 +128,8 @@
     "date": "2021-11-14",
     "readTime": "4 min read",
     "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
-    "contentFile": "kafka-consumers.md"
+    "contentFile": "kafka-consumers.md",
+	"image": "kafka-header.jpg"
   },
   {
     "slug": "kafka-producers",
@@ -117,7 +139,8 @@
     "date": "2021-11-14",
     "readTime": "4 min read",
     "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
-    "contentFile": "kafka-producers.md"
+    "contentFile": "kafka-producers.md",
+	"image": "kafka-header.jpg"
   },
   {
     "slug": "intro-to-kafka",
@@ -127,7 +150,8 @@
     "date": "2021-11-14",
     "readTime": "4 min read",
     "tags": ["Dotnet Core", "Dotnet", "Kafka", "Distributed Systems", "CSharp Programming"],
-    "contentFile": "intro-to-kafka.md"
+    "contentFile": "intro-to-kafka.md",
+	"image": "kafka-header.jpg"
   },
   {
     "slug": "sqs-dispatcher",
@@ -137,6 +161,7 @@
     "date": "2021-10-25",
     "readTime": "3 min read",
     "tags": ["Dotnet Core", "AWS", "AWS SQS", "Cloud Computing", "Cloud"],
-    "contentFile": "sqs-dispatcher.md"
+    "contentFile": "sqs-dispatcher.md",
+	"image": "sqs-header.jpg"
   }
 ]

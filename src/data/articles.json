@@ -1,5 +1,16 @@
 [
   {
+    "slug": "mindlog-conversation-with-ai",
+    "title": "MindLog: Conversations with MindLog",
+    "description": "It’s time to put an AI interface on my personal knowledge base!",
+    "author": "Marcio Duarte",
+    "date": "2026-01-14",
+    "readTime": "5 min read",
+    "tags": ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's", "Weaviate"],
+    "contentFile": "mindlog-conversation-with-ai.md",
+	"image": "mindlog header.jpg"
+  },
+  {
     "slug": "mindlog-searching-smarter",
     "title": "MindLog: Searching Smarter: Building an AI-Ready Knowledge Base",
     "description": "In the last article, we parsed markdown notes, created embeddings, and stored them in Weaviate. That gave us a powerful way to run semantic queries across our knowledge base. But embeddings on their own aren't the end goal. I want to use them",

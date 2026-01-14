@@ -4,8 +4,18 @@ import { ExternalLink, Github } from "lucide-react";
 import navora from "@/assets/Architect workshop header croped.jpg";
 import sqs from "@/assets/sqs-header.jpg";
 import grpc from "@/assets/grpc.png";
+import mindlog from "@/assets/mindlog header.jpg"
 
 const projects = [
+  {
+    title: "The Architect’s Workshop - MindLog",
+    description: "AI powered knowledge based backed by .NET Core, MCP Server, Weaviate, Python and Claude Desktop",
+    image: mindlog,
+    technologies: ["Generative AI Tools", "Vector Databases", "MCP Servers", "Dotnet", "LLM's", "Weaviate"],
+    liveUrl: "",
+    githubUrl: "https://github.com/marcioduarte89/MindLog",
+    featured: true
+  },
   {
     title: "The Architect’s Workshop - Navora",
     description: "A fictional logistics company with a fleet of delivery vehicles that has real time monitoring. This is a project to simulate the full lifecycle of a modern cloud-native system.",
